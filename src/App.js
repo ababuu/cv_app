@@ -31,45 +31,34 @@ class App extends Component{
   render(){
     return(
       <div className='main_container'>
+        <nav><h1>CV MAKER</h1></nav>
         <section className='form_section'>
           <form>
           <h4>Personal Info</h4>
-            <label htmlFor='name'>Name</label>
-            <input id='name' type='text' name='name' onChange={this.handleInputChange}/>
-            <label htmlFor='title'>Professional Title</label>
-            <input id='title' type='text' name='title' onChange={this.handleInputChange}/>
+            <input id='name' type='text' name='name' placeholder="Name" tabindex='3' onChange={this.handleInputChange}/>
+            <input id='title' type='text' name='title' placeholder="Professional Title" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='email'>Email</label>
-            <input id='email' type='email' name='email' onChange={this.handleInputChange}/>
+            <input id='email' type='email' name='email' placeholder="Email" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='phone'>Phone number</label>
-            <input id='phone' type='tel' name='phone' onChange={this.handleInputChange}/>
+            <input id='phone' type='tel' name='phone' placeholder="Phone Number" onChange={this.handleInputChange}/>
           <h4>Educational Background</h4>
-            <label htmlFor='school'>Scool</label>
-            <input id='school' type='text' name='school' onChange={this.handleInputChange}/>
+            <input id='school' type='text' name='school' placeholder="School Name" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='study'>Study</label>
-            <input id='study' type='text' name='study' onChange={this.handleInputChange}/>
+            <input id='study' type='text' name='study' placeholder="Field of Study" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='form'>From</label>
-            <input id='from' type='date' name='school_from' onChange={this.handleInputChange}/>
-            <label htmlFor='to'>To</label>
-            <input id='to' type='date' name='school_to' onChange={this.handleInputChange}/>
+            <input id='from' type='date' name='school_from' placeholder="From" onChange={this.handleInputChange}/>
+            <input id='to' type='date' name='school_to' placeholder="To" onChange={this.handleInputChange}/>
           <h4>Work Expirience</h4>
-            <label htmlFor='company'>Company</label>
-            <input id='compaby' type='text' name='company' onChange={this.handleInputChange}/>
+            <input id='company' type='text' name='company' placeholder="Company Name" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='role'>Role</label>
-            <input id='role' type='text' name='role' onChange={this.handleInputChange}/>
+            <input id='from' type='date' name='work_from' placeholder="From" onChange={this.handleInputChange}/>
+            <input id='to' type='date' name='work_to' placeholder="To" onChange={this.handleInputChange}/>
             <br></br>
-            <label htmlFor='form'>From</label>
-            <input id='from' type='date' name='work_from' onChange={this.handleInputChange}/>
-            <label htmlFor='to'>To</label>
-            <input id='to' type='date' name='work_to' onChange={this.handleInputChange}/>
+            <textarea placeholder="Role Description" name="Message" tabindex="5" rows="10"/>
             <br></br>
-            <button type='submit'>Preview CV</button>
+            <button type='submit' className='submit_btn'>Preview CV</button>
             <br></br>
-            <button>Reset</button>
+            <button className='reset_btn'>Reset</button>
             <br></br>
           </form>
           </section>

@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .main_container{
     display: flex;
     justify-content: center;
@@ -14,6 +15,36 @@
     margin-top: 30px;
 }
 .form_section{
-    border: 1px solid black;
-    width: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3efe7;
+    padding: 20px;
+}
+input {
+    height: 45px; 
+}
+
+input, textarea {
+    width:100%;
+    margin-bottom: 1em;
+    font-size: .9em;
+    font-weight: 300;
+    padding: .5em 1em;
+    border: none;
+    color: #302f2f;
+    font-weight: 300;
+}
+button{
+    cursor: pointer;
+    margin: 0;
+    padding: .5em 2em;
+    background: #636363;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    width:100%;
+    margin-top: 20px;
 }
