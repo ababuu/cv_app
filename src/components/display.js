@@ -6,8 +6,8 @@ class Display extends Component{
         return(
             <div>
                 <div className='header_container'>
-                    <h1 className='name'>Ababu Alemu</h1>
-                    <h4 className='title'>Front-end Dev</h4>
+                    <h1 className='name'>{this.props.name}</h1>
+                    <h4 className='title'>{this.props.title}</h4>
                 </div>
                 <div className='body_container'>
                 <div className='education_container'>

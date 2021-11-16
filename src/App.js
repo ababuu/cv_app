@@ -8,6 +8,7 @@ class App extends Component{
     super(props)
     this.state={
       name: '',
+      title:'',
       email: '',
       phone: '',
       school: '',
@@ -35,7 +36,7 @@ class App extends Component{
         <section className='form_section'>
           <form>
           <h4>Personal Info</h4>
-            <input id='name' type='text' name='name' placeholder="Name" tabindex='3' onChange={this.handleInputChange}/>
+            <input id='name' type='text' name='name' placeholder="Name" onChange={this.handleInputChange}/>
             <input id='title' type='text' name='title' placeholder="Professional Title" onChange={this.handleInputChange}/>
             <br></br>
             <input id='email' type='email' name='email' placeholder="Email" onChange={this.handleInputChange}/>
@@ -55,7 +56,7 @@ class App extends Component{
             <input id='from' type='date' name='work_from' placeholder="From" onChange={this.handleInputChange}/>
             <input id='to' type='date' name='work_to' placeholder="To" onChange={this.handleInputChange}/>
             <br></br>
-            <textarea placeholder="Role Description" name="Message" tabindex="5" rows="10"/>
+            <textarea placeholder="Role Description" name="Message" rows="10"/>
             <br></br>
             <button type='submit' className='submit_btn'>Preview CV</button>
             <br></br>
@@ -64,7 +65,7 @@ class App extends Component{
           </form>
           </section>
           <section className='preview_section'>
-            <Display name={this.state.name}/>
+            <Display name={this.state.name} title={this.state.title} email={this.state.email} phone={this.state.phone} school={this.state.school} study={this.state.study}/>
           </section>
       </div>
     )
