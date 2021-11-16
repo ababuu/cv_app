@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    font-size: 3em;
+}
+.title{
+    margin-top: -20px;
+    font-weight: 300;
+}
+.body_container{
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: minmax(auto, auto) 1fr;
+    word-wrap: break-word
+}
+.education_container{
+    width: 85%;
+    padding-left: 100px;
+    margin-top: 100px;
+}
+.about_container{
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.skills_container{
+    width: 85%;
+    padding-left: 100px;
+    margin-top: 100px;
+}
+.work_container{
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.contact_container{
+    width: 500px;
+    padding-left: 100px;
+    margin-top: 100px;
+}
+.edu_title, .skills_title, .about_title, .expi_title, .contact_title{
+    font-size: 2em;
+    font-weight: 400;
+    border: 2px solid gray;
+    width: 60%;
+}
+h5{
+    font-weight: 400;
+}
+

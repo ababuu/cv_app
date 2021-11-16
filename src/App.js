@@ -41,6 +41,7 @@ class App extends Component{
             <input id='email' type='email' name='email' placeholder="Email" onChange={this.handleInputChange}/>
             <br></br>
             <input id='phone' type='tel' name='phone' placeholder="Phone Number" onChange={this.handleInputChange}/>
+            <input id='title' type='text' name='adress' placeholder="Adress" onChange={this.handleInputChange}/>
           <h4>Educational Background</h4>
             <input id='school' type='text' name='school' placeholder="School Name" onChange={this.handleInputChange}/>
             <br></br>
