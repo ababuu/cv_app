@@ -11,6 +11,7 @@ class App extends Component{
       title:'',
       email: '',
       phone: '',
+      degree: '',
       school: '',
       study: '',
       school_from: '',
@@ -44,9 +45,11 @@ class App extends Component{
             <input id='phone' type='tel' name='phone' placeholder="Phone Number" onChange={this.handleInputChange}/>
             <input id='title' type='text' name='adress' placeholder="Adress" onChange={this.handleInputChange}/>
           <h4>Educational Background</h4>
-            <input id='school' type='text' name='school' placeholder="School Name" onChange={this.handleInputChange}/>
+          <input type='text' name='degree' placeholder="Degree Bsc, Masters or Phd" onChange={this.handleInputChange}/>
             <br></br>
             <input id='study' type='text' name='study' placeholder="Field of Study" onChange={this.handleInputChange}/>
+            <br></br>
+            <input id='school' type='text' name='school' placeholder="School Name" onChange={this.handleInputChange}/>
             <br></br>
             <input id='from' type='date' name='school_from' placeholder="From" onChange={this.handleInputChange}/>
             <input id='to' type='date' name='school_to' placeholder="To" onChange={this.handleInputChange}/>
@@ -65,7 +68,7 @@ class App extends Component{
           </form>
           </section>
           <section className='preview_section'>
-            <Display name={this.state.name} title={this.state.title} email={this.state.email} phone={this.state.phone} school={this.state.school} study={this.state.study}/>
+            <Display name={this.state.name} title={this.state.title} email={this.state.email} phone={this.state.phone} school={this.state.school} study={this.state.study} degree={this.state.degree}/>
           </section>
       </div>
     )

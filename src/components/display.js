@@ -12,7 +12,8 @@ class Display extends Component{
                 <div className='body_container'>
                 <div className='education_container'>
                     <h3 className='edu_title'>Education</h3>
-                    <h4>Enter degree</h4>
+                    <h4>{this.props.degree}</h4>
+                    <h5>Field of study</h5>
                     <h5>university,location</h5>
                     <h5>From-to</h5>
                 </div>
