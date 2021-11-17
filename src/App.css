@@ -25,7 +25,6 @@
 input {
     height: 45px; 
 }
-
 input, textarea {
     width:100%;
     margin-bottom: 1em;

@@ -29,6 +29,7 @@ class App extends Component{
       work_to:'',
     }
     this.handleInputChange=this.handleInputChange.bind(this);
+    this.printDocument=this.printDocument.bind(this);
   }
   handleInputChange(e){
       const {name,value}=e.target;
@@ -75,9 +76,9 @@ class App extends Component{
             <input type='text' name='skill_2' placeholder="skill 2" onChange={this.handleInputChange}/>
             <input type='text' name='skill_3' placeholder="skill 3" onChange={this.handleInputChange}/>
             <input type='text' name='skill_4' placeholder="skill 4" onChange={this.handleInputChange}/>
-            <button type='submit' className='submit_btn'>Preview CV</button>
+            <button className='submit_btn' onClick={this.printDocument}>Print CV</button>
             <br></br>
-            <button className='reset_btn'>Reset</button>
+            <button className='reset_btn' >Reset</button>
             <br></br>
           </form>
           </section>
