@@ -2,6 +2,7 @@
 import React,{ Component } from 'react';
 import './App.css';
 import Display from './components/display';
+import { scroller } from "react-scroll";
 
 class App extends Component{
   constructor(props){
@@ -29,7 +30,7 @@ class App extends Component{
       work_to:'',
     }
     this.handleInputChange=this.handleInputChange.bind(this);
-    this.printDocument=this.printDocument.bind(this);
+    this.scrollToSection=this.scrollToSection.bind(this);
   }
   handleInputChange(e){
       const {name,value}=e.target;
@@ -38,6 +39,14 @@ class App extends Component{
         [name]: value
       })
   }
+  scrollToSection = (e) => {
+    e.preventDefault();
+    scroller.scrollTo("preview_section", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
   render(){
     return(
       <div className='main_container'>
@@ -76,7 +85,7 @@ class App extends Component{
             <input type='text' name='skill_2' placeholder="skill 2" onChange={this.handleInputChange}/>
             <input type='text' name='skill_3' placeholder="skill 3" onChange={this.handleInputChange}/>
             <input type='text' name='skill_4' placeholder="skill 4" onChange={this.handleInputChange}/>
-            <button className='submit_btn' onClick={this.printDocument}>Print CV</button>
+            <button className='submit_btn' onClick={this.scrollToSection}>Preview CV</button>
             <br></br>
             <button className='reset_btn' >Reset</button>
             <br></br>
